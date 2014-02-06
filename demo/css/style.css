@@ -1,0 +1,61 @@
+body, html {
+	padding: 0;
+	margin: 0;
+  	font-size: 100%;
+  	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Main Style */
+body {
+	font-family: 'Roboto',Arial,sans-serif;
+	color: #fff;
+	background: #783;
+}
+
+
+body span {
+	color: #000;
+}
+
+a, a:visited {
+	color: #222; 
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #855;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto',Arial,sans-serif;
+}
+
+h1 { 
+	font-size: 2.5em; 
+	font-weight: 300; 
+}
+
+h2 { 
+	font-size: 1.5em; 
+	font-weight: 300;
+	color: #946; 
+}
+
+.news { 
+	font-size: 1.5em; 
+	font-weight: 300;
+	color: red; 
+}
+
+
+/* Header Style */
+.header {
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	font-size: 200%;
+	background: rgba(0,1,1,1.0);
+}
+
+

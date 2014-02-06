@@ -1,0 +1,40 @@
+Smooth Target Scroll by Lionel Sakou
+
+An easy plugin that let you Smooth-Scroll to specific points on a page. Created by Lionel Sakou.
+
+Compatibility
+Tested on all modern browsers: IE6+, Chrome, Firefox, and Safari. Not fully tested on mobile phone.
+
+How-to-Use
+Add to your webpage to create smooth-scrolling transition to a target point on the page.
+
+To use, simply follow the instructions below:
+
+1. Include the latest jQuery plugin and jquery.targetscroll.js into your document's <head>.
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="path/to/jquery.targetscroll.js"></script>
+OR
+<script type="text/javascript" src="path/to/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="path/to/jquery.targetscroll.js"></script>
+
+2. At the target destination(s), add an invisible named anchor tag at the start of the section.
+e.g.: <a name="thetarget"></a> ...the-target-section...
+
+3. At the source point, link the source to the target using the hash character (#) and the name of the target anchor.
+e.g.: <a href="#thetarget">Go To the-target-section</a> 
+
+4. At the source point, add class="smoothScroll".
+e.g.: <a class="smoothScroll" href="#thetarget">Go To the-target-section</a>
+
+5. Once that is done, simply call the JS function as follows in your $(document).ready(...) clause.
+  $(".smoothScroll").targetscroll({
+	anchorTopPadding: 80
+  });
+ 
+
+That’s it. Once clicked, the page will smoothly move to the target section in 1000 milliseconds.
+
+Note: To customize this plugin, all you need to do is change the following options as you see fit.
+animate: This option lets you define how fast/slow the page will scroll when the link is clicked. Set to false to turn off animation.
+anchorTopPadding: This option lets you set the top padding when the jump to target is clicked. This will let you control the space between the target section and the top of the page. Default is 15 pixels.
+
